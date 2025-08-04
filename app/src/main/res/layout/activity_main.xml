@@ -92,6 +92,100 @@
                 android:textColor="#94a3b8"
                 android:textSize="16sp"/>
 
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0f172a"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- العنوان -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="أداة الاختراق المتقدمة"
+            android:textColor="#38bdf8"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- شريط الأدوات -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+            
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:text="مسح سريع"
+                android:onClick="quickScan"
+                android:backgroundTint="#8b5cf6"
+                android:textColor="#ffffff"
+                android:layout_marginEnd="8dp"/>
+                
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:text="اختراق WiFi"
+                android:onClick="wifiHack"
+                android:backgroundTint="#ec4899"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+
+        <!-- إدخال البروكسي -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#1e293b"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="عنوان البروكسي:"
+                android:textColor="#94a3b8"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/proxy_input"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="مثال: 172.22.25.135"
+                android:textColor="#f1f5f9"
+                android:backgroundTint="#38bdf8"
+                android:inputType="text"/>
+        </LinearLayout>
+
+        <!-- إدخال الهدف -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#1e293b"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="الهدف:"
+                android:textColor="#94a3b8"
+                android:textSize="16sp"/>
+
             <EditText
                 android:id="@+id/target_input"
                 android:layout_width="match_parent"
